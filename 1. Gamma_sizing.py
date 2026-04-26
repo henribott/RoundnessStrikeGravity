@@ -609,7 +609,9 @@ def historical_gamma_sizing(
 
 def plot_gamma_surface(surface_df: pd.DataFrame, asset_name: str):
     pivot = surface_df.pivot_table(
-        index="dist_pips", columns="iv", values="dollar_gamma_per_1pct"
+        index="dist_pips", 
+        columns="iv", 
+        values="dollar_gamma_per_pct"  # Fixed: removed the '1'
     )
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 
