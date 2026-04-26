@@ -3,7 +3,8 @@ Strike Gravity: A Unified Framework for Roundness, Gamma Exposure, and Reflexive
 
 [IN PROGRESS]
 
-Note: This project is an unpretentious attempt to give colour to an idea I had at the desk, while my main objectives are to learn and explore the potential of Gamma sizing round numbers and the psychological patterns around them, in an attempt to generate alpha in Forex Options markets. (This will probably be the theme for my Undergraduate Thesis paper too lol)
+Note: This project is an unpretentious attempt to give colour to an idea I had at the desk, while my main objectives are to learn and explore the potential of Gamma sizing round numbers and the psychological patterns around them, in an attempt to generate alpha in Forex Options markets.
+> (This will probably be the theme for my Undergraduate Thesis paper too lol)
 
 This project is based on the conceptual property of roundness as not only the property of a number (e.g. The number 1.5 is theoretically more "round" than 1.68375), but also as the property of how the payoff surface curves around that number. The key is that roundness creates a discrete discontinuity in the distribution of strikes, which shows as a local maximum in the gamma surface, given in (THEORY) in a continuous FX Market, gamma is smooth. Near a round number with high OI(open interest), I am using the backtests to observe and explore whether gamma is a spike, a curvature anomaly, and the spike being the roundness in geometric terms. 
 
@@ -11,7 +12,7 @@ The catch I initially sensed, from observing the markets, is that since gamma pr
 The true gamma at a round-number strike is larger than BS predicts from a flat vol surface, because the Open Interest concentration creates a local volatility smile kink(at first, a weird, unstable hedging behaviour).
 
 Roundness(k) = local excess curvature of the Implied Volatility surface at K (∂²IV/∂K² |_K)
->>>> IF the roundness is real, the local IV at K is elevated (σ_K > σ_ATM), and a higher local vol at K means BS gamma at K is lower (vol spreads the gamma bell curve, reducing the peak)
+> IF the roundness is real, the local IV at K is elevated (σ_K > σ_ATM), and a higher local vol at K means BS gamma at K is lower (vol spreads the gamma bell curve, reducing the peak)
 FIX 1: For the gravity formula: **Ψ(k) × Ω × Φ** I was using flat IV instead of local vol at K when computing Φ
 
 
