@@ -52,14 +52,14 @@ There is a nonlinear acceleration that neither the GEX model nor the roundness f
 ### Python Backtest
 The backtest tests FOUR claims from the theory, each independently:
  
-  **CLAIM 1 — Roundness predicts excess realised vol**
+  **CLAIM 1: Roundness predicts excess realised vol**
             At bars where spot is within N pips of a high-R strike, RV(next M bars) > RV(random bars at same distance from non-round strikes).
  
-  **CLAIM 2 — Edge ratio (RV/IV at K) is positive near round strikes**
+  **CLAIM 2: Edge ratio (RV/IV at K) is positive near round strikes**
             The vol risk premium (IV - RV) should be SMALLER or NEGATIVE near high-R strikes, meaning gamma is cheap there.
  
-  **CLAIM 3 — Gamma cascade: GEX integral predicts squeeze magnitude**
+  **CLAIM 3: Gamma cascade: GEX integral predicts squeeze magnitude**
             The cumulative gamma exposure integral from S to K predicts the actual spot move over the next window better than distance alone.
  
-  **CLAIM 4 — Strategy selection by R generates positive expected value**
+  **CLAIM 4: Strategy selection by R generates positive expected value**
             Systematic entry using R-thresholds (strangle / straddle / ratio) with BS-priced options produces positive P&L after theta.
